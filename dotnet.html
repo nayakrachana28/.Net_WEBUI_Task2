@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Various Techical Content Page</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 800px;
+            float:center;
+        }
+        
+        .header, .footer {
+          background-color: gray;
+          color: navy;
+          padding: 15px;
+          text-align: center;
+        }
+        .inner{
+            height: 600px;
+        }
+        .bar {
+            width:20%;
+            height: 600px;
+            background-color: pink;
+            border-right: 10px double red;
+            float: left;
+
+        }
+        .bar ul{
+            list-style-type: none;
+            width: 250px;
+            display: block;
+            text-align: center;
+            padding: 30px;
+            font-weight: 300px;
+            margin-left: 30px;
+            overflow: auto;
+
+        }
+        .bar li{
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: lightseagreen;
+        }
+
+        li a{
+            display:block;
+            color:darkblue;
+            text-align: center;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        .bar li a:hover{
+            background-color: palevioletred;
+            color: darkmagenta;
+        }
+        .Content{
+            width: 80%;
+            height:600px;
+            float:left;
+            background-color: lightsteelblue;
+        }
+        .header h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: lightgreen;
+            position: relative;
+            animation-name: word;
+            animation-duration: 6s;
+            animation-iteration-count: 2;
+            animation-direction:reverse;
+        }
+        @keyframes word{
+            0%   {color:red; left:0px; top:0px;}
+            25%  {color:yellow; left:200px; top:0px;}
+            50% {color: blueviolet; right:200px; top:0px}
+        }
+        
+        .footer-distributed{
+            background: #444;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            font: bold 16px sans-serif;
+            text-align: left;
+            padding: 50px 60px 40px;
+            overflow: hidden;
+          }
+
+      section {
+          width: 100%;
+          display: inline-block;
+          background: #ccc;
+          height: 60vh;
+          text-align: center;
+          font-size: 22px;
+          font-weight: 700;
+          text-decoration: underline;
+      }
+
+
+          .footer-distributed .footer-left{
+            float: left;
+          }
+
+          .footer-distributed h3{
+            color:  #ffffff;
+            font: normal 36px 'Roboto', cursive;
+            margin: 0 0 10px;
+          }
+
+          .footer-distributed h3 span{
+            color:  #5383d3;
+          }
+
+          .footer-distributed .footer-links{
+            color:  #ffffff;
+            margin: 0 0 10px;
+            padding: 0;
+          }
+
+          .footer-distributed .footer-links a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+          }
+
+          .footer-distributed .footer-company-name{
+            color:  #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+          }
+
+
+          .footer-distributed .footer-right{
+            float: right;
+          }
+
+          .footer-distributed .footer-right p{
+            display: inline-block;
+            vertical-align: top;
+            margin: 15px 42px 0 0;
+            color: #ffffff;
+          }
+
+          .footer-distributed form input,
+          .footer-distributed form textarea{
+            display: block;
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color:  #1f2022;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            
+            font: inherit;
+            font-size: 14px;
+            font-weight: normal;
+            color:  #d1d2d2;
+
+            width: 400px;
+            padding: 18px;
+          }
+
+
+          .footer-distributed form input{
+            height: 55px;
+            margin-bottom: 15px;
+          }
+
+          .footer-distributed form textarea{
+            height: 100px;
+            margin-bottom: 20px;
+          }
+
+          .footer-distributed form button{
+            border-radius: 3px;
+            background-color:  #33383b;
+            color: #ffffff;
+            border: 0;
+            padding: 15px 50px;
+            font-weight: bold;
+            float: right;
+          }
+          .Content .logo{
+            text-align: center;
+          }
+          .text h2{
+            text-align: center;
+            padding-top: 30px;
+            color: seagreen;
+          }
+          .text p{
+            text-align: center;
+            border: 2px solid green;
+            margin: 100px;
+            margin-top: 50px;
+            padding: 50px;
+            background-color: #444;
+            color: aqua;
+            box-shadow: 20px 10px grey;
+          }
+
+          @media (max-width: 1000px) {
+
+            .footer-distributed {
+              font: bold 14px sans-serif;
+            }
+
+            .footer-distributed .footer-company-name{
+              font-size: 12px;
+            }
+
+            .footer-distributed form input,
+            .footer-distributed form textarea{
+              width: 250px;
+            }
+
+            .footer-distributed form button{
+              padding: 10px 35px;
+            }
+            .bar ul{
+              width: fit-content;
+              margin-left: 0px;
+            } 
+            .header h1{
+              font-size: xx-large;
+            }
+            .text p{
+            margin: 30px;
+            padding: 30px;
+            font-size: large;
+          }
+          }
+
+          @media (max-width: 800px) {
+
+            .footer-distributed{
+              padding: 30px;
+            }
+
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-right{
+              float: none;
+              max-width: 300px;
+              margin: 0 auto;
+            }
+
+            .footer-distributed .footer-left{
+              margin-bottom: 40px;
+            }
+
+            .footer-distributed form{
+              margin-top: 30px;
+            }
+
+            .footer-distributed form{
+              display: block;
+            }
+
+            .footer-distributed form button{
+              float: none;
+            }
+              .bar ul{
+              width: 110px;
+              font-size: x-small;
+              padding-left: 10px;
+            }
+            .header h1{
+              font-size: large;
+            }  
+            .text p{
+            margin: 30px;
+            padding: 30px;
+            font-size: x-small;
+          }  
+          }
+        
+        </style>
+</head>
+<body>
+    <div class="main">
+    <div class="header">
+        <h1> Informative Techical Content Page</h1>
+        
+      </div>
+      
+        <div class="inner">
+    
+            <div class="bar">
+                <ul>
+                <li><a href="page.html" alt="python" target="_blank">Home</a></li>
+                  <li><a href="dotnet.html" alt="dotnet" target="_blank"> Dotnet</a></li>
+                  <li><a href="java.html" alt="java" target="_blank">Java</a></li>
+                  <li><a href="python.html" alt="python" target="_blank">Python</a></li>
+                  <li><a href="Register.html">Register</a></li>
+                  <li><a href="login.html">Log In</a></li>
+                </ul>
+              </div> 
+        
+      
+        <div class="Content">
+            <header>
+              <div class="logo"> 
+                <p class="logo"><h2 class="logo" style="font-size: x-large;"><img src="assest/dotnet.jpg" alt="Dotnet" width="20%" height="100px"></h2></p>
+              </div>
+              
+            </header>
+           
+            <div class="text">
+              <h2 style="font-size: xx-large;"> Dotnet </h2>
+              <p>.NET is a framework to develop software applications. It is designed and developed by Microsoft and the first beta version released in 2000.
+
+                It is used to develop applications for web, Windows, phone. Moreover, it provides a broad range of functionalities and support.
+                
+                This framework contains a large number of class libraries known as Framework Class Library (FCL). The software programs written in .NET are executed in the execution environment, which is called CLR (Common Language Runtime). These are the core and essential parts of the .NET framework.
+                
+                This framework provides various services like memory management, networking, security, memory management, and type-safety.</p>
+            </div>
+            
+          
+    
+        </div>
+        
+        
+    </div>
+    <div class="footer">
+        <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3><img src="assest/logo.jpg" alt="Informative Techical Content Page" width="30%" height="50px"></h3>
+
+				<p class="footer-links">
+					<a href="Page.html">Home</a>
+					<a href="dotnet.html">Dotnet</a>
+					<a href="java.html">Java</a>
+					<a href="python.html">Python</a>
+					<a href="Register.html">Register</a>
+					<a href="login.html">Log In</a>
+				</p>
+
+				<p class="footer-company-name">c© 2022 Rachana Nayak</p>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+</div>  
+    
+</body>
+</html>
+
+
