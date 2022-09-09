@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapuslation</title>
+</head>
+<body>
+    <script>
+        //function without a class
+        function detail(tid,tname){
+            var id=tid;
+            var name=tname;
+
+            //Encapusultion
+            Object.defineProperty
+            (
+                this, "ID",
+                {
+                    get: function()
+                    {
+                        return id;
+                    },
+                    set:function(){
+                        this.id=id;
+                    }
+                }
+            )
+        }
+
+        var t=new detail(10,"Rachana");
+        console.log(t.ID);
+    </script>
+</body>
+</html>
